@@ -300,6 +300,10 @@ body {
   align-items: flex-start;
 }
 
+.Section--hero * .RowLayout {
+  padding-top: 1rem;
+}
+
 .ColumnLayout {
   --columnRowGap: var(--rowGapLarge);
   display: grid;
@@ -10741,6 +10745,9 @@ p {
   transform: skewY(var(--angleStrong));
   transform-origin: left;
 }
+.Section--hero * .HomepageHero__title {
+  max-width: 80%;
+}
 
 .accent {
   color: var(--accentColor);
@@ -10754,7 +10761,17 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 0.5px solid #e0e0e0;
+  width: 100%;
+  z-index: 9999;
+  transition: 0.3s ease-in-out;
+}
+.Section__navbar.Section__theme-white {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar-scrolled {
+  background-color: #fff;
+  box-shadow: 5px -1px 12px -5px grey;
 }
 
 .Section__layoutNavbarContainer {
@@ -10762,7 +10779,7 @@ p {
 }
 
 .navbar {
-  padding: 1.5rem 0 1rem 0;
+  padding: 1rem 0;
   background: #23254f;
 }
 
@@ -10782,11 +10799,15 @@ p {
 
 .navbar-brandlogo {
   max-width: 100%;
-  max-height: 2.25rem !important;
+  max-height: 2.5rem !important;
+}
+
+.logo-lightTheme {
+  display: none;
 }
 
 .navbar-burger {
-  color: white;
+  color: #fff;
   border-radius: 8px;
 }
 .navbar-burger:hover {
@@ -10803,11 +10824,12 @@ p {
 }
 
 .navbar-start a {
-  color: #fff !important;
+  color: #fff;
   transition: 0.3s ease all;
+  text-underline-offset: 5px;
 }
 .navbar-start a:hover {
-  background: rgba(0, 0, 0, 0.4);
+  background: transparent;
   border-radius: 8px;
 }
 
@@ -10815,13 +10837,34 @@ p {
   color: #000 !important;
   transition: 0.3s ease all;
 }
-.Section__theme-white .navbar-start a:hover {
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
 
 .navbar-menu {
-  background: transparent;
+  background: #fff;
+  color: black;
+  margin-top: 1rem;
+  border-radius: 8px;
+  box-shadow: none;
+}
+.navbar-menu.is-active {
+  color: #000;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.navbar-menu .navbar-start .navbar-item {
+  color: inherit;
+}
+@media (min-width: 1024px) {
+  .navbar-menu {
+    background: none;
+    color: #fff;
+  }
+  .navbar-menu .navbar-item {
+    color: inherit;
+  }
+}
+@media (max-width: 1024px) {
+  .navbar-menu {
+    padding: 1rem;
+  }
 }
 
 .hero-banner {
@@ -10855,6 +10898,15 @@ p {
   justify-content: center;
 }
 
+.Section__layoutContainer--promise .Section__layout {
+  position: relative;
+}
+.Section__layoutContainer--promise .Section__layout .greyDotGraphic {
+  position: absolute;
+  top: 75%;
+  left: -45%;
+}
+
 .Section__layoutContainer {
   width: 100%;
   max-width: var(--layoutWidth);
@@ -10880,6 +10932,12 @@ p {
 
 .Section__containerLight {
   background: #f4faff;
+  position: relative;
+}
+.Section__containerLight .greyDotGraphic {
+  position: absolute;
+  top: -140px;
+  right: -50px;
 }
 
 .Copy.variant--Detail {
@@ -10918,6 +10976,18 @@ p {
   z-index: -2;
   transform: skewY(var(--angleStrong));
   height: 580px;
+  background-image: url(/assets/img/polygon3.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+.Section--reminders::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .swiper-button-next:after,
@@ -10983,6 +11053,20 @@ p {
   padding-bottom: 0px !important;
 }
 
+.Section__scheduling {
+  position: relative;
+}
+.Section__scheduling .greyDotGraphic {
+  position: absolute;
+  top: -120px;
+  right: 0;
+}
+.Section__scheduling .greyDotGraphic-bottom {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+}
+
 .bottom-banner-section {
   background: #f4faff;
   padding: 1.5rem;
@@ -11046,7 +11130,7 @@ p {
   display: grid;
   gap: 8px;
 }
-.SiteFooterSection__column .contactUs .contactUs--details span {
+.SiteFooterSection__column .contactUs .contactUs--details span a {
   color: #33cc66;
   font-weight: 500;
 }
@@ -11066,10 +11150,6 @@ p {
     --columnPaddingLarge: 64px;
     --columnPaddingXLarge: 64px;
     --columnCountMax: 2;
-  }
-
-  .HomepageHero__title {
-    max-width: 80%;
   }
 
   .HomepageHeroHeader {
@@ -11249,7 +11329,7 @@ p {
   }
 
   .Section__WhatWeDo * .Section__layout {
-    padding: 84px 0;
+    padding: 64px 0;
   }
   .Section__WhatWeDo * .ColumnLayout {
     justify-items: center;
@@ -11261,6 +11341,10 @@ p {
   }
   .Section__WhatWeDo .Copy__footer {
     width: auto;
+  }
+
+  .variant--homepage {
+    width: 120%;
   }
 }
 @media (min-width: 1024px) {
@@ -11336,6 +11420,9 @@ p {
   padding: 56px 0 0;
   background-color: #23254f;
   overflow: hidden;
+  background-image: url("/assets/img/iphone-small-circle-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .Section__WhatWeDo--banner .interactive-banner .mobile-nav {
   display: none;
@@ -11591,7 +11678,7 @@ p {
   flex-direction: column;
   height: 100%;
 }
-.card-content * h3 {
+.card-content * h2 {
   margin-bottom: 1rem !important;
 }
 
@@ -11628,5 +11715,17 @@ p {
 
   .width-80 {
     width: 80%;
+  }
+}
+@media screen and (min-width: 769px), print {
+  .columns:not(.is-desktop) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1440px), print {
+  .columns:not(.is-desktop) {
+    display: flex;
+    flex-direction: row;
   }
 }

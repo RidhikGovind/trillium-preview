@@ -20,14 +20,20 @@
 	</head>
 
 	<body>
-		<div class="Section__navbar">
-			<section class="hero Section__layoutContainer is-medium navbar-sticky">
+		<!--------------------- NAVBAR SECTION ---------------------- -->
+
+		<div class="Section__navbar navbar-fixed">
+			<section class="hero Section__layoutContainer is-medium">
 				<nav class="navbar" role="navigation" aria-label="main navigation">
 					<div class="navbar-brand">
 						<a class="navbar-item navbar-item--brandLogo" href="/index.html">
 							<img
-								src="/assets/icons/trillium-logo-lg-dark.svg"
-								class="navbar-brandlogo"
+								src="/assets/icons/trillium-logo-lg-dark1.svg"
+								class="navbar-brandlogo logo-darkTheme"
+							/>
+							<img
+								src="/assets/icons/trillium-logo-lg-light2.svg"
+								class="navbar-brandlogo logo-lightTheme"
 							/>
 						</a>
 
@@ -44,18 +50,38 @@
 						</a>
 					</div>
 
+					<!-- <div>
+						<div>
+							<a href="/what-we-do.html" class="has-text-weight-medium">
+								What we do
+							</a>
+							<a href="/pricing.html" class="has-text-weight-medium">
+								Pricing
+							</a>
+						</div>
+
+						<div class="">
+							<div class="">
+								<div class="buttons">
+									<a href="/pricing.html" class="button is-primary is-rounded">
+										<strong>Get started</strong>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div> -->
+
 					<div id="navbarBasicExample" class="navbar-menu">
-						<div class="navbar-start">
+						<div class="navbar-start navbar-start--dark">
 							<a
 								href="/what-we-do.html"
-								class="navbar-item has-text-weight-medium"
+								class="navbar-item navbar-item1 has-text-weight-medium"
 							>
 								What we do
 							</a>
-
 							<a
 								href="/pricing.html"
-								class="navbar-item has-text-weight-medium"
+								class="navbar-item navbar-item2 has-text-weight-medium"
 							>
 								Pricing
 							</a>
@@ -86,25 +112,35 @@
 								<div class="ColumnLayout ColumnLayout--HeroDesktop">
 									<section class="Copy HomepageHero__title variant--Superhero">
 										<header class="HomepageHeroHeader">
-											<h1 class="HomepageHeroHeader__title">
-												Drive <span class="accent">reviews</span> and attract
-												new patients
+											<h1 class="HomepageHeroHeader__title variant--homepage">
+												<!-- Drive <span class="accent">reviews</span> and attract
+												new patients -->
+
+												Increase reviews to
+												<span class="accent">attract the best patients</span>
+												for FREE!
 											</h1>
 										</header>
-										<div class="Copy__body">
-											Take on your competition by leveraging technology that
-											only the large groups and hospitals had until now!
-										</div>
+										<p class="Copy__body">
+											<!-- Take on your competition by leveraging technology that
+											only the large groups and hospitals had until now! -->
+											Level up with your competition by using our patient
+											engagement platform to increase reviews which is the #1
+											tool used by patients looking for a physician!
+										</p>
 										<div class="Copy__footer">
 											<div style="width: 100%">
-												<a class="button is-primary is-rounded">
+												<a
+													href="/pricing.html"
+													class="button is-primary is-rounded"
+												>
 													<strong>Get started</strong>
 												</a>
 											</div>
 										</div>
 									</section>
 									<div class="HeropageHero__img">
-										<img src="../assets/img/hero-banner-img.png" alt="" />
+										<img src="/assets/img/hero-banner-img.png" alt="" />
 									</div>
 								</div>
 							</div>
@@ -124,16 +160,17 @@
 							<div class="ColumnLayout" data-columns="2,2">
 								<section class="Copy variant--Section">
 									<header class="Copy__header">
-										<h2 class="Copy__caption">OUR PROMISE</h2>
-										<h1 class="Copy__title">
-											We will put your needs before our needs
-										</h1>
+										<h2 class="Copy__caption">OUR MISSION</h2>
+										<h3 class="Copy__title">
+											Help independent physicians achieve financial freedom &
+											thrive in the digital economys
+										</h3>
 									</header>
 									<div class="Copy__body">
 										<p>
-											Our goal is simple - to help you achieve financial freedom
-											through better reviews, new engagement model, reduced
-											overhead and increased revenue.
+											Our mission is simple - to help independent physicians
+											counter declining revenues & increasing costs through
+											technology.
 										</p>
 									</div>
 								</section>
@@ -166,20 +203,21 @@
 			<!--------------------- FEATURES SECTION ---------------------- -->
 			<section class="Section Section--aboveAngle">
 				<div class="Section__container Section__containerLight">
+					<img class="greyDotGraphic" src="/assets/img/grey-dot-graphic.svg" />
 					<div class="Section__layoutContainer">
 						<div class="Section__layout">
 							<div class="RowLayout">
 								<div class="ColumnLayout">
 									<section class="Copy variant--Section">
 										<header class="Copy__header">
-											<h1 class="Copy__title">
-												Your all-in-one platform for independent clinics
-											</h1>
+											<h2 class="Copy__title">
+												Patient engagement platform for independent clinics
+											</h2>
 										</header>
 										<div class="Copy__body">
 											<p>
-												We are building the modern way for physicians to manage
-												and conduct independent clinics online
+												We are building a modern platform from the ground up to
+												engage with digital age patients
 											</p>
 										</div>
 									</section>
@@ -191,15 +229,48 @@
 									<div class="Copy variant--Detail">
 										<div class="Copy__header">
 											<div class="Copy__icon">
+												<img
+													src="/assets/icons/online-reputation-icon.svg"
+													alt=""
+												/>
+											</div>
+											<h3 class="Copy__title">Online Reputations</h3>
+										</div>
+										<p class="Copy__body">
+											Building your online reputation should be at the top of
+											your marketing plan. You are ranked higher on search
+											engines thus attracting the best patients. Build an online
+											reputation and increase your revenue!
+										</p>
+									</div>
+									<div class="Copy variant--Detail">
+										<div class="Copy__header">
+											<div class="Copy__icon">
 												<img src="/assets/icons/secure-lock-icon.svg" alt="" />
 											</div>
-											<h1 class="Copy__title">Secure Patient Communication</h1>
+											<h3 class="Copy__title">Secure Patient Communication</h3>
 										</div>
-										<div class="Copy__body">
-											89% of patients prefer texting their service provider. It
-											is convenient, time-saving, and effortless, giving you
-											happier patients.
+										<p class="Copy__body">
+											89% of patients prefer texting their clinic instead of
+											calling. It is convenient, time-saving, and effortless,
+											resulting in happier patients.
+										</p>
+									</div>
+									<div class="Copy variant--Detail">
+										<div class="Copy__header">
+											<div class="Copy__icon">
+												<img
+													src="/assets/icons/automated-reminders-icon.svg"
+													alt=""
+												/>
+											</div>
+											<h3 class="Copy__title">Automated Reminders</h3>
 										</div>
+										<p class="Copy__body">
+											Reduce no-shows to increase your revenue. Send out
+											automated SMS reminders allowing your patients to confirm,
+											reschedule, or cancel their appointment.
+										</p>
 									</div>
 									<div class="Copy variant--Detail">
 										<div class="Copy__header">
@@ -209,46 +280,13 @@
 													alt=""
 												/>
 											</div>
-											<h1 class="Copy__title">Online Scheduling</h1>
+											<h3 class="Copy__title">Online Scheduling</h3>
 										</div>
-										<div class="Copy__body">
-											Minimize the paperwork and ease the burden on your admin
-											staff. With a simple text, your patient can enable
-											effortless online scheduling with your practice anytime.
-										</div>
-									</div>
-
-									<div class="Copy variant--Detail">
-										<div class="Copy__header">
-											<div class="Copy__icon">
-												<img
-													src="/assets/icons/automated-reminders-icon.svg"
-													alt=""
-												/>
-											</div>
-											<h1 class="Copy__title">Automated Reminders</h1>
-										</div>
-										<div class="Copy__body">
-											Cut down losses from missed appointments and reduce
-											no-shows. Send out automated reminders to your patients to
-											confirm, reschedule, or cancel their appointment.
-										</div>
-									</div>
-									<div class="Copy variant--Detail">
-										<div class="Copy__header">
-											<div class="Copy__icon">
-												<img
-													src="/assets/icons/online-reputation-icon.svg"
-													alt=""
-												/>
-											</div>
-											<h1 class="Copy__title">Online Reputations</h1>
-										</div>
-										<div class="Copy__body">
-											Online reviews are the new word-of-mouth affirmation. They
-											can Drive retention, Attract new patients, Build a
-											reputation, and Increase your revenue.
-										</div>
+										<p class="Copy__body">
+											Patients love the ability to make appointments online
+											without phone calls. You also win as it reduces the load
+											on your Frontdesk staff.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -267,23 +305,18 @@
 									<section class="Copy variant--Section">
 										<header class="Copy__header">
 											<h2 class="Copy__caption">REMINDERS</h2>
-											<h1 class="Copy__title">
+											<h3 class="Copy__title">
 												Reduce no-shows with appointment reminders
-											</h1>
+											</h3>
 										</header>
 										<div class="Copy__body">
 											<p>
-												Our goal is simple - to help you achieve financial
-												freedom through better reviews, new engagement model,
-												reduced overhead and increased revenue.
+												Patients ignore automated phone calls as spam. Sending
+												SMS reminders allow them to view and respond quickly.
 											</p>
 										</div>
 									</section>
 									<div class="Copy__image">
-										<img
-											src="/assets/img/reminders-section-mockup-1x.png"
-											alt=""
-										/>
 										<img
 											srcset="
 												/assets/img/reminders-section-mockup.png,
@@ -310,16 +343,15 @@
 								<div class="ColumnLayout ColumnLayout--Desktop">
 									<section class="Copy variant--Section Copy--Desktop">
 										<header class="Copy__header">
-											<h1 class="Copy__title">
-												A strong online reputation is built from your patient’s
-												reviews
-											</h1>
+											<h2 class="Copy__title">
+												Online reputation built on patient reviews
+											</h2>
 										</header>
 										<div class="Copy__body">
 											<p>
-												77% of patients search for a new provider using online
-												reviews. Automated feedback requests will give you the
-												element to retain and attract more patients
+												77% of patients search for a new provider based on
+												review by other patients. Physicians ranked at the top
+												will get the best patients
 											</p>
 										</div>
 									</section>
@@ -327,7 +359,7 @@
 								<div class="slider-section-swiper">
 									<div class="swiper mySwiper">
 										<div class="swiper-wrapper">
-											<div class="swiper-slide swiper-slide-column">
+											<!-- <div class="swiper-slide swiper-slide-column">
 												<div class="p-2 swiper-slide-content">
 													<section class="Copy variant--Footer">
 														<header class="Copy__header">
@@ -340,15 +372,15 @@
 
 													<img src="/assets/img/slider-img-1.png" alt="" />
 												</div>
-											</div>
+											</div> -->
 											<div class="swiper-slide">
 												<div class="p-2 swiper-slide-content">
 													<section class="Copy variant--Footer">
 														<header class="Copy__header">
-															<h1 class="Copy__title">
-																Easy two step response results in higher Google
-																reviews.
-															</h1>
+															<h3 class="Copy__title">
+																We remind your patients to leave a review after
+																their visit.
+															</h3>
 														</header>
 													</section>
 
@@ -359,10 +391,10 @@
 												<div class="p-2 swiper-slide-content">
 													<section class="Copy variant--Footer">
 														<header class="Copy__header">
-															<h1 class="Copy__title">
-																Higher Patient Satisfaction, Higher Google
-																Search Rankings
-															</h1>
+															<h3 class="Copy__title">
+																As your reviews and rating go up, you rank
+																higher on search engines
+															</h3>
 														</header>
 													</section>
 													<img src="/assets/img/slider-img-3.png" alt="" />
@@ -372,10 +404,10 @@
 												<div class="p-2 swiper-slide-content">
 													<section class="Copy variant--Footer">
 														<header class="Copy__header">
-															<h1 class="Copy__title">
-																More reviews, more revenue you generate from a
-																strong reputation
-															</h1>
+															<h3 class="Copy__title">
+																More reviews result in more new patients
+																improving your patient mix
+															</h3>
 														</header>
 													</section>
 
@@ -395,7 +427,8 @@
 		</div>
 
 		<!--------------------- SCHEDULING SECTION ---------------------- -->
-		<section class="Section">
+		<section class="Section Section__scheduling">
+			<img class="greyDotGraphic" src="/assets/img/grey-dot-graphic.svg" />
 			<div class="Section__container">
 				<div class="Section__layoutContainer">
 					<div class="Section__layout Section--NoPaddingBottom">
@@ -404,28 +437,29 @@
 								<section class="Copy variant--Section">
 									<header class="Copy__header">
 										<h2 class="Copy__caption">SCHEDULING</h2>
-										<h1 class="Copy__title">
-											Efficient scheduling is just a touch away
-										</h1>
+										<h3 class="Copy__title">Free up your staff</h3>
 									</header>
 									<div class="Copy__body">
 										<p>
-											Over 43% of patients prefer to book appointments online.
-											We know how significant it is for your practice to
-											accommodate your patient’s convenience. Our online booking
-											system makes it easy for your patients to book
-											appointments online, anytime.
+											Physicians have been reluctant to open up their books
+											worrying about cancellations. This is the most requested
+											feature by your patients and can result in significantly
+											better experience for your patients.
 										</p>
 									</div>
 								</section>
 								<div class="Copy__image">
-									<img src="/assets/img/iphone-with-shadow1.png" alt="" />
+									<img src="/assets/img/iphone-with-shadow2.png" alt="" />
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<!-- <img
+				class="greyDotGraphic-bottom"
+				src="/assets/img/grey-dot-graphic.svg"
+			/> -->
 		</section>
 
 		<!--------------------- SMS SECTION ---------------------- -->
@@ -438,17 +472,15 @@
 								<section class="Copy variant--Section Copy--Desktop">
 									<header class="Copy__header">
 										<h2 class="Copy__caption">SMS TEXTS</h2>
-										<h1 class="Copy__title">
-											Be better connected with your patients
-										</h1>
+										<h3 class="Copy__title">
+											More ways to communicate with patients
+										</h3>
 									</header>
 									<div class="Copy__body">
 										<p>
-											Your patients want to text you. Texting is the most
-											preferred method of communication for over 89% of
-											patients. Don't shy away and make the best use of the
-											power of texting. Communication drives better patient
-											experiences and increases patient engagement.
+											Your patients want more ways to engage with you. Next to
+											self-scheduling, the ability to message their physician is
+											the next most requested feature.
 										</p>
 									</div>
 								</section>
@@ -480,25 +512,26 @@
 								<div class="bottom-banner-section--container">
 									<section class="Copy variant--Section">
 										<header class="Copy__header">
-											<h1 class="Copy__title">
-												Get started with physician success
-											</h1>
+											<h2 class="Copy__title">Get started with success</h2>
 										</header>
 										<div class="Copy__body">
 											<p>
-												Let us help you achieve your goals and keep you
-												connected.
+												Let us help you engage with your patients and increase
+												your ratings.
 											</p>
 										</div>
 										<div
 											class="Copy__footer bottom-baner-section--btnContainer py-4"
 										>
-											<a class="button is-primary is-rounded">
+											<a
+												href="/pricing.html"
+												class="button is-primary is-rounded"
+											>
 												<strong>Get started</strong>
 											</a>
 
 											<a class="button is-primary is-rounded is-outlined">
-												<strong>Book a strategy session</strong>
+												<strong>I need to talk to someone</strong>
 												<!-- <span class="material-symbols-rounded">
 													chevron_right
 												</span> -->
@@ -523,67 +556,81 @@
 										<img src="./assets/icons/trillium-logo-sm-dark.svg" />
 									</div>
 									<div class="contactUs">
-										<h1 class="title is-5">Contact Us</h1>
+										<h5 class="title is-5">Contact Us</h5>
 										<div class="contactUs--details">
 											<p class="subtitle has-text-weight-medium is-6">
-												Phone: <span> (205) 880-7575</span>
+												Phone:
+												<span
+													><a href="tel:+1-205-880-7575">(205) 880-7575</a>
+												</span>
 											</p>
 											<p class="subtitle has-text-weight-medium is-6">
-												Support: <span> support@trillium.health</span>
+												Support:
+												<span
+													><a href="mailto: abc@example.com"
+														>support@trillium.health</a
+													>
+												</span>
 											</p>
 										</div>
 									</div>
 								</div>
 								<div class="SiteFooterSection__column">
 									<section class="List List--hasTitle">
-										<h1 class="title is-5">
-											<a href="#">What we do</a>
-										</h1>
+										<h5 class="title is-5">
+											<a href="/what-we-do.html">What we do</a>
+										</h5>
 										<ul class="List__list">
 											<li class="List__item">
 												<a
-													href="#"
+													href="/what-we-do.html#building-impression"
 													class="is-size-6 m-0 has-text-grey-dark link--default"
 													>Online Reviews
 												</a>
 											</li>
 											<li class="List__item">
 												<a
-													href="#"
+													href="/what-we-do.html#appointment-reminders"
 													class="is-size-6 m-0 has-text-grey-dark link--default"
 													>Appointment Reminder</a
 												>
 											</li>
 											<li class="List__item">
 												<a
-													href="#"
+													href="/what-we-do.html#bidirectional-communication"
 													class="is-size-6 m-0 has-text-grey-dark link--default"
 													>Bidirectional Communication</a
 												>
 											</li>
 											<li class="List__item">
 												<a
-													href="#"
+													href="/what-we-do.html#efficient-scheduling"
 													class="is-size-6 m-0 has-text-grey-dark link--default"
 													>Online Scheduling</a
 												>
 											</li>
 										</ul>
 									</section>
-									<h1 class="title is-5">
-										<a href="#">Pricing</a>
-									</h1>
+									<h5 class="title is-5">
+										<a href="/pricing.html">Pricing</a>
+									</h5>
 								</div>
 
 								<div class="SiteFooterSection__column privacyPolicy">
-									<h1 class="title is-5"><a href="#">Privacy Policy</a></h1>
+									<!-- <h1 class="title is-5"><a href="#">Privacy Policy</a></h1> -->
 									<div>
-										<p>© 2022 Trillium Health</p>
+										<p>
+											©
+											<script type="text/javascript">
+												document.write(new Date().getFullYear());
+											</script>
+											Trillium Health
+										</p>
 										<p>All Rights Reserved.</p>
 									</div>
 								</div>
 								<!-- <div class="SiteFooterSection__column">
-									<h1 class="">Company</h1>
+									<h5 class="">Company</h5>
 									<ul class="List__list">
 										<li class="List__item">
 											<a
